@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-image: url(bgSalamander.gif);
+                transition: opacity 0.3s;
+            }
+
+            #teeth {
+                position: absolute;
+                width: 15%;
+                top:60%;
+                left: 75%;
+                display: block;
+            }
+
+            #Button {
+                position:absolute;
+                width: 8%;
+                top: 83%;
+                left: 78%;
+                
+            }
+
+            #angel {
+                display: none;
+                width:10%;
+                position: absolute;
+                top: 40%;
+                left: 78%;
+            }
+        </style>
+    </head>
+    <body>
+        <a href= "baby2.html"><img src="teeth.png" id="teeth"></a>
+        <img src="beautyButton.png" id="Button" onclick="beautyFilter()">
+        <img src="angel.png" id="angel">
+
+    <script>
+        function beautyFilter(){
+            document.body.style.backgroundImage = "url(bgFlower.gif)";
+            document.getElementById("angel").style.display = "block";
+            document.getElementById("teeth").style.display = "none";
+        }
+    </script>
+    </body>
+</html>
